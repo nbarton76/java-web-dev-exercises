@@ -11,7 +11,7 @@ public class ArrayGradebook {
 
         String[] students = new String[maxStudents];
         double[] grades = new double[maxStudents];
-        Scanner input = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
         String newStudent;
         int numStudents = 0;
@@ -20,7 +20,7 @@ public class ArrayGradebook {
 
         // Get student names
         do {
-            newStudent = input.nextLine();
+            newStudent = in.nextLine();
 
             if (!newStudent.equals("")) {
                 students[numStudents] = newStudent;
@@ -32,7 +32,7 @@ public class ArrayGradebook {
         // Get student grades
         for (int i = 0; i < numStudents; i++) {
             System.out.print("Grade for " + students[i] + ": ");
-            double grade = input.nextDouble();
+            double grade = in.nextDouble();
             grades[i] = grade;
         }
 
