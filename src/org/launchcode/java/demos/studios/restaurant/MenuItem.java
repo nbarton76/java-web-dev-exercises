@@ -1,6 +1,5 @@
-package org.launchcode.java.studio.restaurant;
+package org.launchcode.java.demos.studios.restaurant;
 import java.util.Calendar;
-import java.util.Currency;
 import java.util.Date;
 import java.util.GregorianCalendar;
 

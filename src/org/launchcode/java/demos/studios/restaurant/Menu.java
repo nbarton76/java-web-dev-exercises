@@ -1,7 +1,6 @@
-package org.launchcode.java.studio.restaurant;
+package org.launchcode.java.demos.studios.restaurant;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 
 public class Menu {
     private ArrayList<MenuItem> menuItems;
