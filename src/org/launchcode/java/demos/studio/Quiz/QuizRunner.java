@@ -8,8 +8,7 @@ public class QuizRunner {
     public static void main(String[] args) {
         Quiz myQuiz = new Quiz(new ArrayList<>());
         ArrayList<String> possAns1 = new ArrayList<>(Arrays.asList("Garfield", "Salem", "Cheshire", "Tom"));
-        ArrayList<Integer> correctAns1;
-        correctAns1 = new ArrayList<>(Arrays.asList(2,3));
+        ArrayList<Integer> correctAns1 = new ArrayList<>(Arrays.asList(2,3));
         Checkbox newQuestion1 = new Checkbox(2, "Who is the best cat in the world?", possAns1, correctAns1);
         myQuiz.addQuestion(newQuestion1);
         ArrayList<String> possAns2 = new ArrayList<>(Arrays.asList("Doc", "Tillie", "Gizmo", "Benji", "Nala"));
