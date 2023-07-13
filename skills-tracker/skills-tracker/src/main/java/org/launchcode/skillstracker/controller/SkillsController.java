@@ -2,6 +2,7 @@ package org.launchcode.skillstracker.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
@@ -58,7 +59,7 @@ public class SkillsController {
 
     }
 
-    @postMapping("form")
+    @PostMapping("form")
     @ResponseBody
     public String formsSubmittedData(@RequestParam String name, @RequestParam String skillone, @RequestParam String skilltwo, @RequestParam String skillthree) {
         return "<h1>" + name + "</h1>" +
