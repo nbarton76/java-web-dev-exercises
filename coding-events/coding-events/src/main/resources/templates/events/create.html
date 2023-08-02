@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head"></head>
+<body class="container">
+
+<header th:replace="fragments :: header"></header>
+
+<nav th:replace="fragments :: navigation"></nav>
+<div class="form-group">
+    <form method="post" th:action="@{/events/create}">
+        <label for="eventName">Event Name:</label>
+        <input type="text" id="eventName" name="name" class="form-control"/>
+        <label for="eventDescription">Event Description:</label>
+        <textarea id="eventDescription" name="description" class="form-control"></textarea>
+        <input type="submit" value="Create" class="btn btn-primary-success"/>
+    </form>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tr th:each="event : ${events}">
+        <td th:text="${event}"></td>
+    </tr>
+</table>
+
+</body>
+</html>
